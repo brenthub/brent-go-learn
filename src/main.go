@@ -6,7 +6,8 @@ import (
     "sorter"
     "oop"
     "strconv"
-    "concurrent")
+    "concurrent"
+    "cgss/ipc")
 
 func main() {
 	basic.Test()
@@ -29,4 +30,9 @@ func main() {
 
     concurrent.TestCount()
 
+    ipc.TestIpc()
+
+    basic.RegTest()
+
+    basic.HeapTest()
 }
