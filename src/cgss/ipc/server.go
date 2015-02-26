@@ -19,7 +19,7 @@ type Server interface {
 }
 
 type IpcServer struct {
-    Server
+    Server //匿名默认包含了Server的所有属性和方法
 }
 
 func NewIpcServer(server Server) *IpcServer{

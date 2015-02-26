@@ -1,6 +1,7 @@
 package ipc
 import (
-    "fmt")
+    "fmt"
+    "testing")
 
 type EchoServer struct {
 
@@ -14,12 +15,13 @@ func (server *EchoServer) Name() string{
     return "EchoServer"
 }
 
-func TestIpc(){
+func TestIpc(t testing.T){
     server := NewIpcServer(&EchoServer{})
     client1 :=NewIpcClient(server)
     client2 :=NewIpcClient(server)
 
     resp1,err1 :=client1.Call("From Client1","bb")
+
     resp2,err2 :=client2.Call("From Client2","aa")
 
     if err1==nil{

@@ -28,7 +28,7 @@ func (base *Base) Foo(){
 
 }
 
-func (base *Base) Bar(){
+func (base Base) Bar(){
     fmt.Println("Base Bar")
 }
 

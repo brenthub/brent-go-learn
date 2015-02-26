@@ -7,7 +7,10 @@ import (
     "oop"
     "strconv"
     "concurrent"
-    "cgss/ipc")
+    //"cgss/ipc"
+    "web"
+    "photoweb"
+)
 
 func main() {
 	basic.Test()
@@ -30,9 +33,17 @@ func main() {
 
     concurrent.TestCount()
 
-    ipc.TestIpc()
+    //ipc.TestIpc()
 
     basic.RegTest()
 
     basic.HeapTest()
+
+    oop.TestDuck()
+
+    web.ExampleURL()
+
+    photoweb.Start()
+
 }
+

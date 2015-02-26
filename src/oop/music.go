@@ -75,6 +75,7 @@ func MusicTest(){
     mm:=NewMusicManager()
     m0:=&Music{  "001", "冷暖自知", "张楚",  "网络", "摇滚" }
     mm.Add(m0)
+
     fmt.Println(mm.Len())
     fmt.Println(mm.Find("冷暖自知"))
     fmt.Println(mm.Get(0))
