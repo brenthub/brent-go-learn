@@ -6,10 +6,11 @@ import (
     "sorter"
     "oop"
     "strconv"
-    "concurrent"
+    //"concurrent"
     //"cgss/ipc"
     "web"
-    "photoweb"
+    //ph "photoweb" //当存在相同的子包时取别名
+    "reflectm"
 )
 
 func main() {
@@ -31,7 +32,7 @@ func main() {
     //main返回时并不等待其它goroutine结束
     //concurrent.TestAdd()
 
-    concurrent.TestCount()
+    //concurrent.TestCount()
 
     //ipc.TestIpc()
 
@@ -43,7 +44,9 @@ func main() {
 
     web.ExampleURL()
 
-    photoweb.Start()
+    //ph.Start()
+
+    reflectm.Basic()
 
 }
 
