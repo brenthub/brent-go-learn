@@ -3,6 +3,7 @@ import "fmt"
 
 type Bird interface {
     Call() *Voice
+
 }
 
 type Duck interface {
@@ -27,6 +28,7 @@ func (duck *RealDuck) Walk(){
     fmt.Println(duck.Name,"RealDuck on walking!")
 }
 
+
 type NiDuck struct {
     Wight int
 }
@@ -43,6 +45,7 @@ func (duck *NiDuck) Walk(){
 func TestDuck(){
     var r Duck =&RealDuck{"Tom"}
     fmt.Println(r.Call())
+
     r.Walk()
 
     //*RealDuck前面的*只能作用于struct当为interface时会报错

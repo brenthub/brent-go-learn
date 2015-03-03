@@ -11,6 +11,7 @@ import (
     "web"
     //ph "photoweb" //当存在相同的子包时取别名
     "reflectm"
+//    "martini"
 )
 
 func main() {
@@ -47,6 +48,10 @@ func main() {
     //ph.Start()
 
     reflectm.Basic()
+
+//    martini.Start()
+
+    oop.TestMartini()
 
 }
 
